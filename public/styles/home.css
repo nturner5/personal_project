@@ -1,0 +1,84 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    display: block;
+    font-family: "AvenirLTStd-Light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #333;
+}
+
+
+.homebg_1 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/hero_image_1.jpg?285845556141198520);
+    
+    }
+
+    .popup {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+    padding-left: 100px;
+    text-align: center;
+    z-index: 99;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+p {
+    display: block;
+    /*-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;*/
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.main-content {
+    display: block;
+    background: #f3f3f5;
+    margin-bottom: 435px;
+    position: relative;
+    z-index: 9;
+    /*height: 100vh;*/
+}
+
+home--products {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+home--products h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+     
+}
+.wrapper {
+padding-top: 50px;
+text-align: center;
+font-size: 24px;
+letter-spacing: 2px;
+}
+ .home-prod{
+     display: flex;
+     justify-content: center;
+ }
+.all-watches-button {
+    /*display: flex;*/
+    background-color: black;
+    /*justify-content: center;*/
+    color: white;
+    height: 50px;
+    width: 100px;
+    
+   
+}
+
