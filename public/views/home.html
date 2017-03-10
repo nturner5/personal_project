@@ -2,30 +2,22 @@
     <!--{{products}}-->
 </div>
 <div class="homebg_1">
-    {{products}}
+    <!--{{products}}-->
 </div>
-
 <div class="main-content">
     <div class="popup" style="background-color: #fde9e5;">
-    <p style="color: #333333;">FREE SHIPPING WORLDWIDE</p>
-</div>
-<section class="home--products">
-    <div class="wrapper">
-        <h2>Our Most<br>Popular Watches</h2>
+        <p style="color: #333333;">FREE SHIPPING WORLDWIDE</p>
     </div>
-    <div class="home-prod" ng-repeat="product in products">
-
-    
-        {{product.id}}
-        <img ng-src="{{product.imageurl}}" alt="">
-        {{product.name}}
-        {{product.price}}
-    
-
-
-
-    </div>
-    <button class="all-watches-button" type="all watches">ALL WATCHES</button>
-</section>
+    <section class="home--products">
+        <div class="wrapper">
+            <h2>Our Most<br>Popular Watches</h2>
+        </div>
+        <section class="home-prod">
+            <div  ng-repeat="product in products">
+               <a href="/product/:id">  <img class="prod_image" ng-src="{{product.imageurl}}" alt=""></a>
+                <br> {{product.name}} <br> {{product.price}}
+            </div>
+        </section>
+        <button class="all-watches-button" type="all watches">ALL WATCHES</button>
+    </section>
 </div>
-
