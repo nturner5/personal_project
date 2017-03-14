@@ -35,21 +35,131 @@ h6,
 
 }*/
 
+/*.site-header {
+    width: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    height: 100%;
+    background: #fff;
+    padding: 15px 0;
+    transition: all 0.5s;
+    border-right: 1px solid #ebebeb;
+    display: none;
+}*/
+.site-header {
+    width: 100%;
+    position: fixed;
+    height: 8.5vh;
+    top: 0;
+    z-index: 999999;
+    
+    background: #fff;
+    padding: 15px 0;
+    transition: all 0.5s;
+    border-bottom: 1px solid #ebebeb;
+    /*display: none;*/
+}
+.site-header__logo {
+    text-align: center;
+    /*margin: 0 auto;*/
+    max-width: 100%;
+    width: 100%;
+    /*margin-top: 2px;*/
+    background-image: url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo.png?285845556141198520");
+    background-size: 30px auto;
+    height: 50px;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 1.5vh;
+    left: 26vw;
+}
+.ham{
+
+width: 20px;
+margin-top: 5px;
+ margin-left: 20px
+}
+.site-server_h2{
+    position: fixed;
+    top: 2.3vh;
+    text-align: center;
+    left: 36vw;
+}
+
+.header--ham {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    transition: background 0.4s;
+    margin-bottom: 5px;
+   ;
+}
+.header--cart {
+    width: 100%;
+    height: 40px;
+    background-image: url(//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/cart.png?285845556141198520);
+    background-size: 22px;
+    height: 50px;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 10vw;
+    color: #333;
+    font-family: "AvenirLTStd-Black";
+    text-align: center;
+    /*padding-top: 21px;*/
+    font-size: 10px;
+    top: 0;
+    margin-bottom: 1px;
+}
+
 
 .footer {
-height: 60vh;
+height: 64vh;
 background-color: #FEE9E5;
     text-align: center;
     padding-top: 5vh;
+    padding-bottom: 4vh;
+}
+
+.footer h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 2px;
 }
 
 .index--social_media{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
+    margin-bottom: 5vh;
 }
 
+.index--social_media {
+    padding-top: 30px
+}
+
+.index--social_media a {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+    border: 1px solid #eacac2;
+    border-radius: 2px
+}
+
+.index--social_media a img {
+    max-height: 23px;
+    max-width: 23px
+}
 
 
 
@@ -434,8 +544,8 @@ font-size: 24px;
 
 .insta-img{
    
-   width: 42vw;
-   height: 42vw;
+   width: 41vw;
+   height: 41vw;
    margin: 2.5vw;
     /*display: flex;*/
     /*flex-wrap: wrap;*/

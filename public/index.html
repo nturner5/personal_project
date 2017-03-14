@@ -8,17 +8,39 @@
         <link href="styles/home.css" rel="stylesheet">
         </head>
     <body ng-controller="controller">
+       <header class="site-header">
+          <div class="ham">
+               <div class="header--ham"></div>
+               <div class="header--ham"></div>
+               <div class="header--ham"></div>
+               
+            </div>
+           <div class="site-header__logo "></div>
+           <h2 class="site-server_h2">Paul Valentine</h2>
+           <div class="header--cart"></div>
+           
+       </header>
     <ui-view></ui-view>
-    {{test}}
+    <!--{{test}}
     {{test1}}
-    {{2+2}}
+    {{2+2}}-->
     <div class="footer">
       <h2>FAQ</h2> 
       <h2>Returns</h2>  
       <h2>shipping</h2>  
       <h2>contact</h2> 
       <h2>Store finder</h2> 
-      <div class="index--social_media"></div>
+      <div class="index--social_media">
+<a href="https://www.facebook.com/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-facebook.png?7955300992394463818"></a>
+      <a href="https://www.instagram.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-instagram.png?7955300992394463818"></a>
+            <a href="https://www.snapchat.com/add/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-snapchat.png?7955300992394463818"></a>
+            <a href="https://de.pinterest.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-pinterest.png?7955300992394463818"></a>
+      </div>
+      <h2>Site by bao agency</h2>
+      <h2>Copyright Paul Valentine 2017</h2>
+      <h2>Terms & Conditions | Privacy | Legal Notice</h2>
+      
+      
 
        
     </div>
@@ -27,12 +49,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
          <script src="./app.js"></script>
          <script src="./services/service.js"></script>
           
         <script src="./controllers/controller.js"></script>
         <script src="./controllers/productCtrl.js"></script>
+        <script src="./directive/animations.js"></script>
+        
         
        
     </body>
+
+
+
+
 </html>
