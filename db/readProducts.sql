@@ -1,3 +1,4 @@
 select *
 
-from products;
+from products
+where popularity = true;
