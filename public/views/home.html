@@ -13,12 +13,12 @@
             <div class="wrapper">
                 <h2>Our Most<br>Popular Watches</h2>
             </div>
-            <section class="home-prod">
+            <!--<section class="home-prod">
                 <div ng-repeat="product in products" class="productsize">
                     <a href="/product/:id"> <img class="prod_image" ng-src="{{product.imageurl}}" alt=""></a>
                     <br> {{product.name}} <br> {{product.price}}
                 </div>
-            </section>
+            </section>-->
             <div class="btn-center">
                 <div class="all-watches-button" type="all watches">ALL WATCHES</div>
             </div>
@@ -28,35 +28,45 @@
 <section class="home--collections" ng-click="">
              <!--FELIZ-->
         <div class="collection_flex">
-            <div class="feliz-bg">
-                <h2 class="collections-name">Feliz</h2>
+            <div class="feliz-bg_parent">
+                <div class="feliz-bg">
+                    <h2 class="collections-name">Feliz</h2>
+                </div>
             </div>
             
             <!--PEARL-->
-            <div class="pearl-bg">
-                <h2 class="collections-name">Pearl</h2>
+            <div class="pearl-bg_parent">
+                <div class="pearl-bg">
+                    <h2 class="collections-name">Pearl</h2>
+                </div>
             </div>
             
         </div>
         <!--Journey-->
-        <div class="home--journey">
-            <!--<img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818" class="home--journey_img" alt="">-->
-            <div class="home--journey_content">
-                <h1>Join Us On Our</h1>
-                <h2 class="home--journey_caption">Journey</h2>
-                <div class="home--journey_button">
-                    <h2>Journey</h2>
+        <div class="home--journey_parent">
+            <div class="home--journey">
+                <!--<img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818" class="home--journey_img" alt="">-->
+                <div class="home--journey_content">
+                    <h1>Join Us On Our</h1>
+                    <h2 class="home--journey_caption">Journey</h2>
+                    <div class="home--journey_button">
+                        <h2>Journey</h2>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="collection_flex">
             <!--Marina-->
-            <div class="marina-bg">
-                <h2 class="collections-name">Marina</h2>
+            <div class="marina-bg_parent">
+                <div class="marina-bg">
+                    <h2 class="collections-name">Marina</h2>
+                </div>
             </div>
-          
-            <div class="straps-bg">
-                <h2 class="collections-name">straps</h2>
+
+            <div class="straps-bg_parent">
+                <div class="straps-bg">
+                    <h2 class="collections-name">straps</h2>
+                </div>
             </div>
             
         </div>

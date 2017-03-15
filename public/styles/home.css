@@ -314,25 +314,96 @@ home--products h2 {
 
 
 
+.feliz-bg_parent{
+width: 105%;
+height: 230px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 2s;
+}
 
 .feliz-bg {
     background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_1_image.jpg?7955300992394463818');
     background-size: cover;
-    width: 105%;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     background-position: center;
-    margin-bottom: 25px;    
+    transition: all .8s;    
+}
+/*zoom in on hover*/
+.feliz-bg_parent:hover .feliz-bg,
+.feliz-bg_parent:focus .feliz-bg {
+    transform: scale(1.2);
 }
 
-.pearl-bg {
+/*overlay color*/
+.feliz-bg::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+.feliz-bg_parent:hover .feliz-bg:before,
+.feliz-bg_parent:focus .feliz-bg:before {
+  display: block;
+}
+
+/*.pearl-bg {
     background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_2_image.jpg?7955300992394463818');
     background-size: cover;
     width: 105%;
     height: 230px;
     background-position: center;
+}*/
+
+.pearl-bg_parent{
+width: 105%;
+height: 230px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 2s;
 }
 
-.marina-bg {
+.pearl-bg {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_2_image.jpg?7955300992394463818');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: all .8s;    
+}
+/*zoom in on hover*/
+.pearl-bg_parent:hover .pearl-bg,
+.pearl-bg_parent:focus .pearl-bg {
+    transform: scale(1.2);
+}
+
+/*overlay color*/
+.pearl-bg::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+.pearl-bg_parent:hover .pearl-bg:before,
+.pearl-bg_parent:focus .pearl-bg:before {
+  display: block;
+}
+
+
+/*.marina-bg {
     background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_3_image.jpg?7955300992394463818');
     background-size: cover;
    width: 105%;
@@ -340,17 +411,96 @@ home--products h2 {
     background-position: center;
     margin-bottom: 25px;    
     
+}*/
+.marina-bg_parent{
+width: 105%;
+height: 230px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 2s;
 }
 
-.straps-bg {
+.marina-bg {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_3_image.jpg?7955300992394463818');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: all .8s;    
+}
+/*zoom in on hover*/
+.marina-bg_parent:hover .marina-bg,
+.marina-bg_parent:focus .marina-bg {
+    transform: scale(1.2);
+}
+
+/*overlay color*/
+.marina-bg::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+.marina-bg_parent:hover .marina-bg:before,
+.marina-bg_parent:focus .marina-bg:before {
+  display: block;
+}
+
+/*.straps-bg {
     background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_4_image.jpg?7955300992394463818');
     background-size: cover;
    width: 105%;
     height: 230px;
     background-position: center;
+}*/
+
+.straps-bg_parent{
+width: 105%;
+height: 230px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 2s;
 }
 
-.home--journey {
+.straps-bg {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_4_image.jpg?7955300992394463818');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: all .8s;    
+}
+/*zoom in on hover*/
+.straps-bg_parent:hover .straps-bg,
+.straps-bg_parent:focus .straps-bg {
+    transform: scale(1.2);
+}
+
+/*overlay color*/
+.straps-bg::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+.straps-bg_parent:hover .straps-bg:before,
+.straps-bg_parent:focus .straps-bg:before {
+  display: block;
+}
+
+/*.home--journey {
     background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818');
     width:33%;
     height: 100%;
@@ -360,11 +510,50 @@ home--products h2 {
     align-content: center;
     flex-direction: column;
     color: white;
-    margin-left: 35px;
+   
+    margin-bottom: 25px;    
+}*/
+.home--journey_parent{
+width: 33%;
+height: 100%;
+ margin-left: 35px;
     margin-right: 25px;
-    /*margin-bottom: 25px;*/
-    
+    overflow: hidden;
+    transition: all 2s;
 }
+
+.home--journey {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: all .8s;    
+}
+/*zoom in on hover*/
+.home--journey_parent:hover .home--journey,
+.home--journey_parent:focus .home--journey {
+    transform: scale(1.2);
+}
+
+/*overlay color*/
+.home--journey::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+.home--journey_parent:hover .home--journey:before,
+.home--journey_parent:focus .home--journey:before {
+  display: block;
+}
+
 .collections-name{
     color: white;
     padding-top: 170px;
