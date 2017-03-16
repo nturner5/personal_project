@@ -35,7 +35,7 @@ h6,
 
 }*/
 
-.site-header {
+header {
     width: 100px;
     position: fixed;
     left: 0;
@@ -44,9 +44,13 @@ h6,
     height: 100%;
     background: #fff;
     padding: 15px 0;
-    transition: all 0.5s;
+    transition: all ease 0.4s;
     border-right: 1px solid #ebebeb;
-    /*display: none;*/
+    margin:0 0 0 -100px;
+}
+.menushow {
+   margin: 0;
+    
 }
 /*.site-header {
     width: 100%;
@@ -128,12 +132,21 @@ background-color: #FEE9E5;
     padding-top: 5vh;
     padding-bottom: 4vh;
     padding-left: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer-clear{
+    height: 64vh;
 }
 
 .footer h2 {
     font-size: 12px;
     letter-spacing: 1px;
     padding: 2px;
+    color: black;
 }
 
 .index--social_media{
@@ -208,23 +221,17 @@ p {
 
 
 .experiment{
-    padding-left: 100px;
+  
+    transition: all ease .4s;
 }
 
-/*home--products {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+.home--products {
+  background-color: #F3F3F5;
 }
 
-home--products h2 {
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-align: center;
-    align-items: center;
-}*/
+.home--products h2 {
+    color: black;
+}
 
 .wrapper {
     padding-top: 50px;
@@ -316,7 +323,7 @@ home--products h2 {
 .collection_flex {
     width: 29%;
     
-    /*height: 90%;*/
+    height: 69vh;
 }
 
 
@@ -796,11 +803,13 @@ font-size: 24px;
 }*/
 
 .home--email{
-    margin-top: 60px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     /*align-content: center;*/
     align-items: center;
+    background-color: white;
+   
     
 }
 .email_png{
@@ -821,7 +830,19 @@ font-size: 24px;
    
 
 }
+
+.home--submit_btn:hover {
+    box-shadow: inset 0 100px 0 0 #FFDCD3;
+    color: white;
+}
+
+
+
+
 .home--submit_btn{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+	transition: all ease 0.8s;
       background-color: #333;
     height: 47px;
     border-radius: 3px;
