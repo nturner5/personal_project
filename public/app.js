@@ -15,3 +15,4 @@ angular.module('app', ['ui.router'])
       templateUrl: './views/product.html'
     })
 })
+
