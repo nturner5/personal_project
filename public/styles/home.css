@@ -177,7 +177,7 @@ background-color: #FEE9E5;
                                              
  
                              */
-.homebg_1 {
+div.homebg_1 {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -558,10 +558,11 @@ height: 100%;
     transition: all .8s;    
 }
 /*zoom in on hover*/
-.home--journey_parent:hover .home--journey,
+
+/*.home--journey_parent:hover .home--journey,
 .home--journey_parent:focus .home--journey {
     transform: scale(1.2);
-}
+}*/
 
 /*overlay color*/
 .home--journey::before {
@@ -601,7 +602,7 @@ height: 100%;
     /*box-sizing: border-box;*/
 }
 
-.home--journey h1{
+.home--journey h1,h2{
 color: white;
 letter-spacing: 2px;
 font-weight: 100;
@@ -622,7 +623,16 @@ font-size: 40px;
 /*.home--journey_btn{
 
 }*/
+.home--journey_button:hover {
+    box-shadow: inset 0 100px 0 0 #333333;
+    color: white;
+}
+
+
 .home--journey_button {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+	transition: all ease 0.8s;
     width: auto;
     height: 36px;
     background-color: #FFDCD3;
@@ -655,6 +665,7 @@ font-size: 40px;
 .home--about h2{
     font-size: 24px;
     letter-spacing: 1px;
+    color: black;
     
 }
 
@@ -663,7 +674,18 @@ font-size: 40px;
     letter-spacing: .7px;
     
 }
+
+.home--about_btn:hover {
+    box-shadow: inset 0 100px 0 0 #FFDCD3;
+    color: white;
+}
+
+
+
 .home--about_btn{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+	transition: all ease 0.8s;
     margin-top: 20px;
     width: 117px;
     height: 36px;
@@ -690,6 +712,7 @@ font-size: 40px;
 color: white;
 letter-spacing: 1px;
 font-size: 12px;
+padding-top: 3.2px;
 }
 
 .home--instagram {
