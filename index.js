@@ -21,6 +21,7 @@ app.use(express.static('./public'));
 
 
 app.get('/products', controller.readAll)
+app.get('/product/:id', controller.showProd)
 
 
 app.listen('3050', function(){

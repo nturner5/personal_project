@@ -15,9 +15,13 @@
                 <h2>Our Most<br>Popular Watches</h2>
             </div>
             <section class="home-prod">
-                <div ng-repeat="product in products" class="productsize">
-                    <a href="/product/:id"> <img class="prod_image" ng-src="{{product.imageurl}}" alt=""></a>
-                    <br> {{product.name}} <br> {{product.price}}
+              <div ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
+                
+                       <div> 
+                       <img class="prod_image" ng-src="{{productA.imageurl}}" alt="">
+                        <br> {{productA.name}}{{productA.price}}
+                    </div>
+                
                 </div>
             </section>
             <div class="btn-center">

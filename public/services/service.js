@@ -7,5 +7,8 @@ angular.module('app')
             return resp;
         })
     }
+ this.readProduct = function(id){
+     return $http.get('/product/' + id)
+ }
     // this.getProduct = function
 })

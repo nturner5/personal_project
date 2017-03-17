@@ -1,0 +1,23 @@
+<div class="product--nav">
+  <h2>Overview</h2>
+  <h2>Details</h2>
+  <h2>Inspiration</h2>
+  <h2>straps</h2>
+</div>
+
+
+<div class="product--bg">
+  <div style="background-image: url('{{product.backgroundurl}}')" class="product--bg_img">
+      <img ng-src="{{product.imageurl}}" alt="" class="product--img">
+      <div class="product--right_scroll">
+      {{product.name}}
+        <div class="product--add_cart"><h2>Add To Bag - $</h2>{{product.price}}</div>
+      {{product.collection}}
+      {{product.description}}
+      {{product.spec}}
+      {{product.ship}}
+      </div>
+  </div>
+</div>
+
+

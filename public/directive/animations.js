@@ -45,7 +45,7 @@ angular.module('app')
                     // });
                     $(window).scroll(function () {
                         var height = $(window).scrollTop();
-                        console.log(height)
+                        // console.log(height)
                         if (height > 700) {
                             // do something
                             $("header").css({
@@ -58,7 +58,7 @@ angular.module('app')
 
 
 
-                            console.log('menu slides out now')
+                            // console.log('menu slides out now')
                         } else {
                             $("header").css({
                                 margin: -100
@@ -79,7 +79,7 @@ angular.module('app')
                     // });
                     $(window).click(function (event) {
                         event.preventDefault();
-                        console.log('so far so good')
+                        // console.log('so far so good')
 
                         $("header").css({
                             margin: 0

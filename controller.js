@@ -6,8 +6,15 @@ module.exports = {
 
 readAll: function(req, res){
     db.readProducts(function(err, prod){
-        console.log(err, 'all products');
-        res.send(prod)
+        if (err) return console.log(err, 'err on readProducts');
+        else return res.send(prod)
+    })
+},
+showProd: function(req, res, next){
+    db.readProduct([req.params.id], function(err, prod){
+        if (err) return console.log(err, 'err on readProduct');
+        else return res.send(prod)
+       
     })
 }
 

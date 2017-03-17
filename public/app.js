@@ -7,12 +7,16 @@ angular.module('app', ['ui.router'])
       url: '/products',
       controller: 'controller',
       templateUrl: './views/home.html'
-    }),
-      $stateProvider
-    .state('product', {
-      url: '/product/:id',
-      controller: 'controller',
-      templateUrl: './views/product.html'
     })
+
+     .state('product', {
+      url: '/product/:id',
+      controller: 'productDetailsCtrl',
+      templateUrl: './views/product.html',
+      // params: {
+      //   id: 'default value' 
+      // }
+    })
+     
 })
 

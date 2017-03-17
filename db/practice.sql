@@ -22,14 +22,31 @@ CREATE TABLE products(
    price int,
    popularity boolean,
    imageurl text,
-   collection text
+   collection text,
+   backgroundurl text,
+   description text,
+   spec text,
+   ship text
+
 );
 
-INSERT INTO products (name, price, popularity, imageurl, collection)  
-VALUES ('Marina Rose Gold Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/MARINA_-_MESH_ROSE_GOLD_copy_8a3e118d-cd93-4bb1-9e39-b0920f305ee5_large.png?v=1484417397', 'Marina');
-INSERT INTO products (name, price, popularity, imageurl, collection)  
-VALUES ('Marina Silver Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/MARINA_-_MESH_SILVER_aa1ff7a7-9633-48f4-b6bd-01199c43dd46_large.png?v=1484417423', 'Marina');
-INSERT INTO products (name, price, popularity, imageurl, collection)  
-VALUES ('Pearl Rose Gold Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/PEARL_-_MESH_ROSE_GOLD_bb1a4d48-7511-4ec5-b0ab-707f78dfe1cc_large.png?v=1484417450', 'Pearl');
-INSERT INTO products (name, price, popularity, imageurl, collection)  
-VALUES ('Pearl Silver Mesh', 200, true, '//cdn.shopify.com/s/files/1/1653/9561/products/PEARL_-_SILVER_MESH_56266684-ebd4-4954-8a19-bceb69e62b64_large.png?v=1484417477', 'Pearl');
+INSERT INTO products (name, price, popularity, imageurl, collection, backgroundurl, description, spec, ship)  
+VALUES ('Marina Rose Gold Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/MARINA_-_MESH_ROSE_GOLD_copy_8a3e118d-cd93-4bb1-9e39-b0920f305ee5_large.png?v=1484417397', 'Marina', 'https://cdn.shopify.com/s/files/1/1653/9561/files/marina.jpg?7955300992394463818', 'The Marina Gold Mesh combines timeless elegance with modern minimalism to make for a look that is equal parts trendy and fashionable – and classically upscale. 
+Named after Los Angeles beautiful harbor-side neighborhood Marina Del Rey, the Marina Gold Mesh watch is made from rose gold-plated stainless steel and it is sophisticated, but not flashy, just like the polished Marina itself. The Marinas minimalist, ultra-thin watch case and luxury stainless steel mesh strap make it light and comfortable to wear, whether youre heading to a gala or simply going for a walk on the beach. Understated luxury at its best.', 'spec details dummy data', 'Free shipping worldwide. 
+Fast and safe with DHL. 
+Easy returns within 14 days of delivery.');
+INSERT INTO products (name, price, popularity, imageurl, collection, backgroundurl, description, spec, ship)  
+VALUES ('Marina Silver Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/MARINA_-_MESH_SILVER_aa1ff7a7-9633-48f4-b6bd-01199c43dd46_large.png?v=1484417423', 'Marina', 'https://cdn.shopify.com/s/files/1/1653/9561/files/marina.jpg?7955300992394463818', 'The Marina Gold Mesh combines timeless elegance with modern minimalism to make for a look that is equal parts trendy and fashionable – and classically upscale. 
+Named after Los Angeles beautiful harbor-side neighborhood Marina Del Rey, the Marina Gold Mesh watch is made from rose gold-plated stainless steel and it is sophisticated, but not flashy, just like the polished Marina itself. The Marinas minimalist, ultra-thin watch case and luxury stainless steel mesh strap make it light and comfortable to wear, whether youre heading to a gala or simply going for a walk on the beach. Understated luxury at its best.', 'spec details dummy data', 'Free shipping worldwide. 
+Fast and safe with DHL. 
+Easy returns within 14 days of delivery.');
+INSERT INTO products (name, price, popularity, imageurl, collection, backgroundurl, description, spec, ship)  
+VALUES ('Pearl Rose Gold Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/PEARL_-_MESH_ROSE_GOLD_bb1a4d48-7511-4ec5-b0ab-707f78dfe1cc_large.png?v=1484417450', 'Pearl', 'https://cdn.shopify.com/s/files/1/1653/9561/files/pearl.jpg?7955300992394463818', 'The Marina Gold Mesh combines timeless elegance with modern minimalism to make for a look that is equal parts trendy and fashionable – and classically upscale. 
+Named after Los Angeles beautiful harbor-side neighborhood Marina Del Rey, the Marina Gold Mesh watch is made from rose gold-plated stainless steel and it is sophisticated, but not flashy, just like the polished Marina itself. The Marinas minimalist, ultra-thin watch case and luxury stainless steel mesh strap make it light and comfortable to wear, whether youre heading to a gala or simply going for a walk on the beach. Understated luxury at its best.', 'spec details dummy data', 'Free shipping worldwide. 
+Fast and safe with DHL. 
+Easy returns within 14 days of delivery.');
+INSERT INTO products (name, price, popularity, imageurl, collection, backgroundurl, description, spec, ship)  
+VALUES ('Pearl Silver Mesh', 200, true, '//cdn.shopify.com/s/files/1/1653/9561/products/PEARL_-_SILVER_MESH_56266684-ebd4-4954-8a19-bceb69e62b64_large.png?v=1484417477', 'Pearl', 'https://cdn.shopify.com/s/files/1/1653/9561/files/pearl.jpg?7955300992394463818', 'The Marina Gold Mesh combines timeless elegance with modern minimalism to make for a look that is equal parts trendy and fashionable – and classically upscale. 
+Named after Los Angeles beautiful harbor-side neighborhood Marina Del Rey, the Marina Gold Mesh watch is made from rose gold-plated stainless steel and it is sophisticated, but not flashy, just like the polished Marina itself. The Marinas minimalist, ultra-thin watch case and luxury stainless steel mesh strap make it light and comfortable to wear, whether youre heading to a gala or simply going for a walk on the beach. Understated luxury at its best.', 'spec details dummy data', 'Free shipping worldwide. 
+Fast and safe with DHL. 
+Easy returns within 14 days of delivery.');
