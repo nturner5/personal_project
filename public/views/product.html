@@ -11,8 +11,9 @@
       <img ng-src="{{product.imageurl}}" alt="" class="product--img">
       <div class="product--right_scroll">
       {{product.name}}
-        <div class="product--add_cart"><h2>Add To Bag - $</h2>{{product.price}}</div>
+      <button class="product--add_cart" ng-click="addCart(product)"><h2>Add To Bag - $ {{product.price}}</h2></button>
       {{product.collection}}
+      <div class="space"></div>
       {{product.description}}
       {{product.spec}}
       {{product.ship}}

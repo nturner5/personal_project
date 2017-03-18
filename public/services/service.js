@@ -8,7 +8,16 @@ angular.module('app')
         })
     }
  this.readProduct = function(id){
+     console.log(id);
      return $http.get('/product/' + id)
  }
+ this.addToCart = function(productid){
+     return $http.post('/add-to-cart/' + productid, {
+         productid: productid
+     })
+ }
+this.getCart = function(){
+    return $http.get('/cart')
+}
     // this.getProduct = function
 })

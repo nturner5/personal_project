@@ -14,7 +14,7 @@ CREATE TABLE products(
 INSERT INTO products (name, size, color, collection, price, popularity, description)  
 VALUES ('watchx', 200, 'silver', 'special', 123, true, 'elegant');
 
-drop table products;
+drop table if exists products, users, cart, orders;
 
 CREATE TABLE products(
    id serial PRIMARY KEY,
@@ -29,6 +29,31 @@ CREATE TABLE products(
    ship text
 
 );
+
+
+
+CREATE TABLE cart (
+    id SERIAL PRIMARY KEY,
+    orderid INTEGER REFERENCES orders(id),
+    productid INTEGER REFERENCES products(id)
+);
+
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    userid INTEGER REFERENCES users(id),
+    completed BOOLEAN
+);
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    username VARCHAR(255),
+    password VARCHAR(255)
+);
+
+
+-- CREATE TABLE
 
 INSERT INTO products (name, price, popularity, imageurl, collection, backgroundurl, description, spec, ship)  
 VALUES ('Marina Rose Gold Mesh', 149.00, true, '//cdn.shopify.com/s/files/1/1653/9561/products/MARINA_-_MESH_ROSE_GOLD_copy_8a3e118d-cd93-4bb1-9e39-b0920f305ee5_large.png?v=1484417397', 'Marina', 'https://cdn.shopify.com/s/files/1/1653/9561/files/marina.jpg?7955300992394463818', 'The Marina Gold Mesh combines timeless elegance with modern minimalism to make for a look that is equal parts trendy and fashionable – and classically upscale. 
@@ -50,3 +75,12 @@ VALUES ('Pearl Silver Mesh', 200, true, '//cdn.shopify.com/s/files/1/1653/9561/p
 Named after Los Angeles beautiful harbor-side neighborhood Marina Del Rey, the Marina Gold Mesh watch is made from rose gold-plated stainless steel and it is sophisticated, but not flashy, just like the polished Marina itself. The Marinas minimalist, ultra-thin watch case and luxury stainless steel mesh strap make it light and comfortable to wear, whether youre heading to a gala or simply going for a walk on the beach. Understated luxury at its best.', 'spec details dummy data', 'Free shipping worldwide. 
 Fast and safe with DHL. 
 Easy returns within 14 days of delivery.');
+
+INSERT INTO users (first_name, last_name, username, password) VALUES
+('Jon', 'Myrick', 'jon', '123'),
+('nate', 'turner', 'nate', '123');
+
+
+INSERT INTO orders(userid, completed) VALUES
+(0, false),
+(1, true);

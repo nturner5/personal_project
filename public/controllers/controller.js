@@ -12,7 +12,10 @@ angular.module('app')
         console.log(resp.data)
         $scope.products = resp.data;
     })
+
+   
     // service.readProduct().then(function(resp){
     //     $scope.product = resp.data;
     // })
+     
 })

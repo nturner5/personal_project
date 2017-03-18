@@ -17,6 +17,11 @@ angular.module('app', ['ui.router'])
       //   id: 'default value' 
       // }
     })
+    .state('login', {
+      url: '/login',
+      controller: 'controller',
+      templateUrl: './views/login.html'
+    })
      
 })
 
