@@ -3,12 +3,12 @@ angular.module('app')
     this.test1 = 'service works'
     this.readProducts = function(){
         return $http.get('/products').then(function(resp){
-            console.log("Service: " + resp);
+            // console.log("Service: " + resp);
             return resp;
         })
     }
  this.readProduct = function(id){
-     console.log(id);
+    //  console.log(id);
      return $http.get('/product/' + id)
  }
  this.addToCart = function(productid){
@@ -18,6 +18,9 @@ angular.module('app')
  }
 this.getCart = function(){
     return $http.get('/cart')
+}
+this.getTotal = function(){
+    return $http.get('total')
 }
     // this.getProduct = function
 })

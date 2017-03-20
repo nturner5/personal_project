@@ -1,84 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles/reset.css" rel="stylesheet">        
-        <link href="styles/home.css" rel="stylesheet">
-        </head>
-    <body ng-controller="productDetailsCtrl">
-        <animations-directive animate='animate'></animations-directive>
-       <header class="site-header">
-          <div class="ham">
-               <div class="header--ham"></div>
-               <div class="header--ham"></div>
-               <div class="header--ham"></div>
-               
-            </div>
-           <div class="site-header__logo "></div>
-           <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
-           <div class="header--cart" ng-click="getCart()"></div>
-           
-       </header>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/home.css" rel="stylesheet">
+</head>
+
+<body ng-controller="productDetailsCtrl">
+    <animations-directive animate='animate'></animations-directive>
+    <header class="site-header">
+        <div class="ham">
+            <div class="header--ham"></div>
+            <div class="header--ham"></div>
+            <div class="header--ham"></div>
+        </div>
+        <div class="site-header__logo "></div>
+        <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
+        <div class="header--cart" ng-click="getCart()"></div>
+    </header>
     <ui-view></ui-view>
     <!--{{test}}
     {{test1}}
     {{2+2}}-->
     <div class="cart">
-         <ul ng-repeat="product in cart">
-            <li>Name: {{product.name}}</li>
-        </ul>
+        <h1 class="cartTitle">Your Bag</h1>
+        <div ng-repeat="product in cart" class="cartProduct">
+            <div class="cart--bg_img">
+                <div class="cartDetails">
+                    <h3>{{product.name}}</h3><h3> {{product.collection}}</h3><h3>${{product.price}}</h3>
+                </div>
+                <img ng-src="{{product.imageurl}}" alt="" class="cart--img">
+            </div>
+        </div>
+        <div class="cart--btn_out" ng-controller="controller">
+            <div class="cartTotal">
+                <div class="totalLeft"><h2>TOTAL</h2></div> <div class="totalRight"><h2>${{total}}</h2></div>
+            </div>
+            <div class="cart--btn">
+                <h2>Pay Now Securely</h2>
+            </div>
+        </div>
     </div>
-    
     <div class="footer">
-      <h2>FAQ</h2> 
-      <h2>Returns</h2>  
-      <h2>shipping</h2>  
-      <h2>contact</h2> 
-      <h2>Store finder</h2> 
-      <div class="index--social_media">
-         
-<a href="https://www.facebook.com/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-facebook.png?7955300992394463818"></a>
-      <a href="https://www.instagram.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-instagram.png?7955300992394463818"></a>
+        <h2>FAQ</h2>
+        <h2>Returns</h2>
+        <h2>shipping</h2>
+        <h2>contact</h2>
+        <h2>Store finder</h2>
+        <div class="index--social_media">
+            <a href="https://www.facebook.com/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-facebook.png?7955300992394463818"></a>
+            <a href="https://www.instagram.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-instagram.png?7955300992394463818"></a>
             <a href="https://www.snapchat.com/add/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-snapchat.png?7955300992394463818"></a>
             <a href="https://de.pinterest.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-pinterest.png?7955300992394463818"></a>
-      </div>
-      <h2>Site by bao agency</h2>
-      <h2>Copyright Paul Valentine 2017</h2>
-      <h2>Terms & Conditions | Privacy | Legal Notice</h2>
-      
-      
-
-       
+        </div>
+        <h2>Site by bao agency</h2>
+        <h2>Copyright Paul Valentine 2017</h2>
+        <h2>Terms & Conditions | Privacy | Legal Notice</h2>
     </div>
-   
     <!--{{products}}-->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-
-         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-      
-         <script src="./app.js"></script>
-         
-         <script src="./services/service.js"></script>
-          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
+        <script src="./services/service.js"></script>
         <script src="./controllers/controller.js"></script>
         <script src="./controllers/productDetailsCtrl.js"></script>
         <script src="./directive/animations.js"></script>
         <!--<script src="./controllers/cartCtrl.js"></script>-->
-        
-        
-        
-       
-    </body>
-
-
-
+</body>
 
 </html>

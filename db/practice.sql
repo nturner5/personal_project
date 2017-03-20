@@ -34,8 +34,8 @@ CREATE TABLE products(
 
 CREATE TABLE cart (
     id SERIAL PRIMARY KEY,
-    orderid INTEGER REFERENCES orders(id),
-    productid INTEGER REFERENCES products(id)
+    orderid INTEGER,
+    productid int
 );
 
 CREATE TABLE orders (

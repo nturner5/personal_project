@@ -32,5 +32,10 @@ module.exports = {
             console.log('clicked')
             return res.send(prod)
         })
+    },
+    getTotal: function(req, res, next){
+        db.get_total(function(err, total){
+            return res.send(total)
+        })
     }
 }
