@@ -7,7 +7,7 @@
         <link href="styles/reset.css" rel="stylesheet">        
         <link href="styles/home.css" rel="stylesheet">
         </head>
-    <body >
+    <body ng-controller="productDetailsCtrl">
         <animations-directive animate='animate'></animations-directive>
        <header class="site-header">
           <div class="ham">
@@ -18,13 +18,18 @@
             </div>
            <div class="site-header__logo "></div>
            <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
-           <div class="header--cart"></div>
+           <div class="header--cart" ng-click="getCart()"></div>
            
        </header>
     <ui-view></ui-view>
     <!--{{test}}
     {{test1}}
     {{2+2}}-->
+    <div class="cart">
+         <ul ng-repeat="product in cart">
+            <li>Name: {{product.name}}</li>
+        </ul>
+    </div>
     
     <div class="footer">
       <h2>FAQ</h2> 

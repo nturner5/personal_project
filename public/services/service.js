@@ -1,5 +1,5 @@
 angular.module('app')
-.service('service', function($http){
+.service('mainSvc', function($http){
     this.test1 = 'service works'
     this.readProducts = function(){
         return $http.get('/products').then(function(resp){

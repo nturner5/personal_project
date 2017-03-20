@@ -23,7 +23,7 @@ app.use(express.static('./public'));
 app.get('/products', controller.readAll)
 app.get('/product/:id', controller.showProd)
 app.post('/add-to-cart/:id', controller.addToCart)
-app.get('/cart/', controller.getCart)
+app.get('/cart', controller.getCart)
 
 app.listen('3050', function(){
   console.log("Successfully listening on : 3050")	

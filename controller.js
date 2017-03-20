@@ -29,7 +29,8 @@ module.exports = {
     },
     getCart: function(req, res, next){
         db.get_cart( function (err, prod){
-
+            console.log('clicked')
+            return res.send(prod)
         })
     }
 }

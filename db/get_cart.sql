@@ -1,3 +1,4 @@
 select *
-from products   
- Join cart on products.id = productid;
+from cart  
+ Join products on productid = products.id;
+--  where id = $1;
