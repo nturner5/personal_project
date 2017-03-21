@@ -23,7 +23,7 @@ module.exports = {
         db.add_to_cart([req.params.id], function (err, prod) {
             console.log(prod)
             console.log(err)
-            return ('works')
+            return res.send('added to cart')
         })
 
     },

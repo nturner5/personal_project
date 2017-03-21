@@ -102,6 +102,7 @@ angular.module('app')
 
                     });
                     $('.product--add_cart').click(function (event) {
+                        console.log('added jquery works')
                         $(".cart").show();
                         $(".cart-overlay").show();
 
@@ -162,6 +163,11 @@ angular.module('app')
                         
                          );
                     })
+                    // $('.prodHover').mouseover(function(){
+                    //     console.log('prod hovered')
+                    //     // $('.prod_image').css('margin-top', '7vh')
+                    //     $( ".prod_image" ).off( "mouseenter mouseleave" );
+                    // })
 
 
                 })

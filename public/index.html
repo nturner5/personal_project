@@ -9,42 +9,17 @@
     <link href="styles/home.css" rel="stylesheet">
     <link href="styles/hamburgers.css" rel="stylesheet">
 </head>
-
-<body ng-controller="productDetailsCtrl">
-    <div class="cart-overlay"></div>
-    <animations-directive animate='animate'></animations-directive>
-    <header class="site-header">
-        <div class="ham">
-            <div class="header--ham"></div>
-            <div class="header--ham"></div>
-            <div class="header--ham"></div>
-        </div>
-        <!--<div class="hamburger hamburger--collapse">
-  <div class="hamburger-box">
-    <div class="hamburger-inner"></div>
-  </div>
-</div>-->
-        <div class="site-header__logo "></div>
-        <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
-        <div class="header--cart"></div>
-    </header>
-    <div class="header-expand">
-        paul valentine
-        <h2>watches</h2>
-        <h2>straps</h2>
-        <h2>Shop Instagram</h2>
-        <h2>brand</h2>
-        <h2>customer care</h2>
-        <div class="social"></div>
-        
-
-    </div>
-    <div class="header-overlay"></div>
+ <animations-directive animate='animate'></animations-directive>
+<body>
+     
+        <div class="cart-overlay"></div>
+    <nav-directive></nav-directive>
     <ui-view></ui-view>
     <!--{{test}}
     {{test1}}
     {{2+2}}-->
-    
+    <cart-directive></cart-directive>
+    <!--<section ng-controller="productDetailsCtrl">
     <div class="cart">
         <h1 class="cartTitle">Your Bag</h1>
         <div ng-repeat="product in cart" class="cartProduct">
@@ -63,23 +38,9 @@
                 <h2>Pay Now Securely</h2>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <h2>FAQ</h2>
-        <h2>Returns</h2>
-        <h2>shipping</h2>
-        <h2>contact</h2>
-        <h2>Store finder</h2>
-        <div class="index--social_media">
-            <a href="https://www.facebook.com/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-facebook.png?7955300992394463818"></a>
-            <a href="https://www.instagram.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-instagram.png?7955300992394463818"></a>
-            <a href="https://www.snapchat.com/add/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-snapchat.png?7955300992394463818"></a>
-            <a href="https://de.pinterest.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-pinterest.png?7955300992394463818"></a>
-        </div>
-        <h2>Site by bao agency</h2>
-        <h2>Copyright Paul Valentine 2017</h2>
-        <h2>Terms & Conditions | Privacy | Legal Notice</h2>
-    </div>
+    </div>-->
+    <!--</section>-->
+    <footer-directive></footer-directive>
     <!--{{products}}-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
@@ -90,7 +51,14 @@
         <script src="./services/service.js"></script>
         <script src="./controllers/controller.js"></script>
         <script src="./controllers/productDetailsCtrl.js"></script>
+        <script src="./controllers/navCtrl.js"></script>
+        <script src="./controllers/cartCtrl.js"></script>
+        
         <script src="./directive/animations.js"></script>
+        <script src="./directive/cart-directive.js"></script>
+        <script src="./directive/nav-directive.js"></script>
+        <script src="./directive/footer-directive.js"></script>
+
         <!--<script src="./controllers/cartCtrl.js"></script>-->
 </body>
 

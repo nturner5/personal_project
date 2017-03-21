@@ -7,6 +7,7 @@ angular.module('app')
         })
         
     };
+    
     $scope.test1 = mainSvc.test1;
     mainSvc.readProducts().then(function(resp){
         // console.log(resp.data)

@@ -1,3 +1,24 @@
-<div ng-repeat="prod in mycart">
-    {{prod}}
-</div>
+<section ng-controller="cartCtrl">
+   
+ <!--<div class="cart-overlay"></div>-->
+    <div class="cart">
+        <h1 class="cartTitle">Your Bag</h1>
+        <div ng-repeat="product in cart" class="cartProduct">
+            <div class="cart--bg_img">
+                <div class="cartDetails">
+                    <h3>{{product.name}}</h3><h3> {{product.collection}}</h3><h3>${{product.price}}</h3>
+                </div>
+                <img ng-src="{{product.imageurl}}" alt="" class="cart--img">
+            </div>
+        </div>
+        <div class="cart--btn_out">
+            <div class="cartTotal">
+                <div class="totalLeft"><h2>TOTAL</h2></div> <div class="totalRight"><h2>${{total}}</h2></div>
+            </div>
+            <div class="cart--btn">
+                <h2>Pay Now Securely</h2>
+                {{test}}
+            </div>
+        </div>
+    </div>
+</section>

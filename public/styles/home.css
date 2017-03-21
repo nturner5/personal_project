@@ -60,6 +60,7 @@ header {
     padding: 20px;
     transition: background 0.4s;
     
+    
 
 }
 .header-overlay{
@@ -285,6 +286,7 @@ p {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 80px;
+    transition: all ease 0.4s;
 }
 
 .btn-center {

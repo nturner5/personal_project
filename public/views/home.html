@@ -14,8 +14,8 @@
             <div class="wrapper">
                 <h2>Our Most<br>Popular Watches</h2>
             </div>
-            <section class="home-prod" ng-controller="controller">
-              <div ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
+            <section class="home-prod">
+              <div id="prodHover" ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
                 
                        <div> 
                        <img class="prod_image" ng-src="{{productA.imageurl}}" alt="">
