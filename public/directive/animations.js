@@ -87,11 +87,81 @@ angular.module('app')
 
 
                     });
+                    //   $('product--bg_img').ready(function(event){
+                    //     $("header").css({
+                    //             margin: 0
+                    //         });
+                    //         $(".experiment").css({
+                    //             paddingLeft: 100
+                    //         });
+                        
+                    // });
+                    $(window).ready(function(event){
+                         $(".cart").hide();
+                        $(".cart-overlay").hide();
+
+                    });
+                    $('.product--add_cart').click(function (event) {
+                        $(".cart").show();
+                        $(".cart-overlay").show();
+
+                    });
+
+                     $('.cart-overlay,  .header--cart').click(function (event) {
+                         $(".cart").hide();
+                        $(".cart-overlay").hide();
 
 
 
+                     });
+                     $('.ham').click(function (event) {
+                         console.log('ham clicked')
+                         $(".header-expand").css({
+                             marginLeft: 100
+                         });
+                          $(".header-overlay").css({
+                             marginRight: 0
+                         });
 
+                         $('header').css({
+                             background: '#000000'
+                         });
+                          $('.header--ham').css(
+                             'background-color', 'white'
+                         );
+                          $(".site-header__logo").css(
+                         'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo-white.png?285845556141198520")'
 
+                        );
+                          $(".header--cart").css(
+                            'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/cart-white.png?285845556141198520")'
+                        
+                         );
+                        
+                     })
+                    $('.header-overlay' ).click(function(event){
+                        $(".header-expand").css({
+                             marginLeft: -600
+                         });
+                          $(".header-overlay").css(
+                             "margin-right", "-70vw"
+                         );
+
+                         $('header').css({
+                             background: '#fff'
+                         });
+                          $(".site-header__logo").css(
+                         'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo.png?285845556141198520")'
+
+                        );
+                        $('.header--ham').css(
+                             'background-color', 'black'
+                         );
+                          $(".header--cart").css(
+                            'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/cart.png?285845556141198520")'
+                        
+                         );
+                    })
 
 
                 })

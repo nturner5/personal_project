@@ -10,16 +10,23 @@
   <div style="background-image: url('{{product.backgroundurl}}')" class="product--bg_img">
       <img ng-src="{{product.imageurl}}" alt="" class="product--img">
       <div class="product--right_scroll">
-      {{product.name}}
-      <button class="product--add_cart" ng-click="addCart(product)"><h2>Add To Bag - $ {{product.price}}</h2></button>
-      {{product.collection}}
-      <div class="space"></div>
-      {{product.description}}
+      <div class="right_scroll1">
+        <h2>{{product.name}}</h2>
+        <button class="product--add_cart" ng-click="addCart(product)"><h1>Add To Bag - $ {{product.price}}</h1></button>
+        <h3>send gift hint</h3>
+    </div>
+    <div class="prod_description">
+      <!--{{product.collection}}-->
+      <!--<div class="space"></div>-->
+      <!--{{product.description}}
       {{product.spec}}
-      {{product.ship}}
-    
-      </div>
+      {{product.ship}}-->
+      <h2>Description</h2> <h2> Specifications</h2> <h2>Shipping/Returns</h2>
+    </div>
+</div>
   </div>
 </div>
 
 
+
+<div class="product--straps"></div>

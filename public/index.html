@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/home.css" rel="stylesheet">
+    <link href="styles/hamburgers.css" rel="stylesheet">
 </head>
 
 <body ng-controller="productDetailsCtrl">
+    <div class="cart-overlay"></div>
     <animations-directive animate='animate'></animations-directive>
     <header class="site-header">
         <div class="ham">
@@ -17,14 +19,32 @@
             <div class="header--ham"></div>
             <div class="header--ham"></div>
         </div>
+        <!--<div class="hamburger hamburger--collapse">
+  <div class="hamburger-box">
+    <div class="hamburger-inner"></div>
+  </div>
+</div>-->
         <div class="site-header__logo "></div>
         <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
-        <div class="header--cart" ng-click="getCart()"></div>
+        <div class="header--cart"></div>
     </header>
+    <div class="header-expand">
+        paul valentine
+        <h2>watches</h2>
+        <h2>straps</h2>
+        <h2>Shop Instagram</h2>
+        <h2>brand</h2>
+        <h2>customer care</h2>
+        <div class="social"></div>
+        
+
+    </div>
+    <div class="header-overlay"></div>
     <ui-view></ui-view>
     <!--{{test}}
     {{test1}}
     {{2+2}}-->
+    
     <div class="cart">
         <h1 class="cartTitle">Your Bag</h1>
         <div ng-repeat="product in cart" class="cartProduct">
