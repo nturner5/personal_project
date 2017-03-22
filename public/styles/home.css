@@ -37,7 +37,7 @@ h6,
 
 }*/
 
-header {
+.site-header {
     width: 100px;
     position: fixed;
     left: 0;
@@ -83,22 +83,33 @@ header {
     margin: 0;
 }
 
-
-/*.site-header {
-    width: 100%;
+/*.site-header{
+       width: 100px;
     position: fixed;
-    height: 8.5vh;
+    left: 0;
     top: 0;
-    z-index: 999999;
-    
+    z-index: 100;
+    height: 100%;
     background: #fff;
     padding: 15px 0;
-    transition: all 0.5s;
-    border-bottom: 1px solid #ebebeb;
-    display: none;*/
+    transition: all ease 0.4s;
+    border-right: 1px solid #ebebeb;
+    margin: 0 0 0 -100px;
+}*/
 
-
-/*}*/
+.psite-header{
+    width: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+    background: #fff;
+    padding: 15px 0;
+    transition: all ease 0.4s;
+    border-right: 1px solid #ebebeb;
+    /*margin: 0 0 0 -100px;*/
+}
 
 .site-header__logo {
     text-align: center;
@@ -600,6 +611,24 @@ p {
     /*margin-bottom: 25px;*/
     overflow: hidden;
     transition: all 2s;
+}
+
+.product--photos_parent {
+    width: 33%;
+    height: 100%;
+    margin-left: 35px;
+    margin-right: 25px;
+    /*margin-bottom: 25px;*/
+    overflow: hidden;
+    transition: all 2s;
+}
+.product--photos {
+    background-image: url('//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: all .8s;
 }
 
 .home--journey {
@@ -1156,4 +1185,118 @@ letter-spacing: .3px;
     color: white;
     margin: 0 auto;
     margin-top: 10px;
+}
+
+.product--shipping_etc{
+    width: 100vw;
+    /*padding-left: 100px;*/
+    display: flex;
+    background: white;
+    height: 15vh;
+}
+
+.product--shipping_etc div{
+    width: 260px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 3vh;
+    background-color: #FFFBFB;
+    border: .3px solid lightgray;
+}
+.icon{
+    display: flex;
+    padding-top: 5px;
+
+}
+
+.icon img{
+    width: auto;
+    padding: auto;
+    height: 35px;
+    margin-right: 20px;
+    /*margin-top: 5px;*/
+    margin-left: 5px;
+}
+.product--photos{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    background: #f3f3f5;
+}
+.gallery{
+    width: 25%;
+   margin: 12px;
+   
+}
+.padleft{
+    margin-left: 100px;
+}
+
+.product-reviews{
+    background: white;
+height: 35vh;
+border-top: 1px solid #ebebeb;
+border-bottom: 1px solid #ebebeb;
+}
+.product-reviews h2{
+    color: black;
+  text-align: center;
+    font-size: 26px;
+    padding-top: 7vh;
+}
+.reviewBtn{
+    width: 180px;
+    height: 40px;
+    background: #333333;
+    margin: 0 auto;
+}
+
+.reviewBtn h3{
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+.product--straps{
+    height: 90vh;
+    background: FFFBFB;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    padding-top: 5vh;
+    padding-left: 25vw;
+    
+
+}
+.text-carasoul h1{
+    color: black;
+   font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: -17px;
+   
+}
+.text-carasoul p{
+    color: #A8A8A8;
+    width: 25vw;
+    letter-spacing: .5px;
+    line-height: 25px;
+        margin-bottom: 7vh;
+}
+.text-carasoul{
+width: 25vw;
+ margin-top: 8vh;
+}
+.caro_btn_parent{
+    display: flex;
+        justify-content: space-between;
+
+}
+.caro_btn_child{
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ebebeb;
+}
+.strap_img img{
+    height: 50vh;
+    width: auto;
 }

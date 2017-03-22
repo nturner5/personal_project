@@ -48,7 +48,7 @@ angular.module('app')
                         // console.log(height)
                         if (height > 700) {
                             // do something
-                            $("header").css({
+                            $(".site-header").css({
                                 margin: 0
                             });
                             $(".experiment").css({
@@ -60,7 +60,7 @@ angular.module('app')
 
                             // console.log('menu slides out now')
                         } else {
-                            $("header").css({
+                            $(".site-header").css({
                                 margin: -100
                             });
                             $(".experiment").css({
@@ -68,6 +68,11 @@ angular.module('app')
                             })
                         }
                     });
+
+                    //#################PRODUCT HOVER#################################
+                    // $('.gallery').hover(function(){
+                    //     $('gallery').css(background)
+                    // })
 
                     // slide down menu
                     // $( window ).click(function () {
@@ -81,7 +86,7 @@ angular.module('app')
                         event.preventDefault();
                         // console.log('so far so good')
 
-                        $("header").css({
+                        $(".site-header").css({
                             margin: 0
                         });
 
@@ -115,6 +120,9 @@ angular.module('app')
 
 
                     //  });
+                    $('.ham').click(function (event) {
+                        console.log('2nd ham clicked')
+                    });
                      $('.ham').click(function (event) {
                          console.log('ham clicked')
                          $(".header-expand").css({

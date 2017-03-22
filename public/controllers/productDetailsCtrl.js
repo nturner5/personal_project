@@ -25,5 +25,10 @@ angular.module('app')
             $scope.cart = res.data;
             
         })
+          $scope.home = function(){
+        console.log('it twerks')
+        $state.go('home')
+        
+    };
 
     });

@@ -1,32 +1,107 @@
-<div class="product--nav">
-  <h2>Overview</h2>
-  <h2>Details</h2>
-  <h2>Inspiration</h2>
-  <h2>straps</h2>
-</div>
-
-
-<div class="product--bg">
-  <div style="background-image: url('{{product.backgroundurl}}')" class="product--bg_img">
+<section>
+  <!--<animations-directive animate='animate'></animations-directive>-->
+  <header class="psite-header">
+    <div class="ham">
+      <div class="header--ham"></div>
+      <div class="header--ham"></div>
+      <div class="header--ham"></div>
+    </div>
+    <!--<div class="hamburger hamburger--collapse">
+  <div class="hamburger-box">
+    <div class="hamburger-inner"></div>
+  </div>
+</div>-->
+    <a ng-click="home()">
+      <div class="site-header__logo "></div>
+    </a>
+    <!--<h2 class="site-server_h2">Paul Valentine</h2>-->
+    <div class="header--cart"></div>
+  </header>
+  <div class="header-expand">
+    paul valentine
+    <h2>watches</h2>
+    <h2>straps</h2>
+    <h2>Shop Instagram</h2>
+    <h2>brand</h2>
+    <h2>customer care</h2>
+    <div class="social"></div>
+  </div>
+  <div class="header-overlay"></div>
+</section>
+<div class="padleft">
+  <div class="product--nav">
+    <h2>Overview</h2>
+    <h2>Details</h2>
+    <h2>Inspiration</h2>
+    <h2>straps</h2>
+  </div>
+  <div class="product--bg">
+    <div style="background-image: url('{{product.backgroundurl}}')" class="product--bg_img">
       <img ng-src="{{product.imageurl}}" alt="" class="product--img">
       <div class="product--right_scroll">
-      <div class="right_scroll1">
-        <h2>{{product.name}}</h2>
-        <button class="product--add_cart" ng-click="showmeFn(); addCart(product)" ><h1>Add To Bag - $ {{product.price}}</h1></button>
-        <h3>send gift hint</h3>
-    </div>
-    <div class="prod_description">
-      <!--{{product.collection}}-->
-      <!--<div class="space"></div>-->
-      <!--{{product.description}}
+        <div class="right_scroll1">
+          <h2>{{product.name}}</h2>
+          <button class="product--add_cart" ng-click="showmeFn(); addCart(product)"><h1>Add To Bag - $ {{product.price}}</h1></button>
+          <h3>send gift hint</h3>
+        </div>
+        <div class="prod_description">
+          <!--{{product.collection}}-->
+          <!--<div class="space"></div>-->
+          <!--{{product.description}}
       {{product.spec}}
       {{product.ship}}-->
-      <h2>Description</h2> <h2> Specifications</h2> <h2>Shipping/Returns</h2>
+          <h2>Description</h2>
+          <h2> Specifications</h2>
+          <h2>Shipping/Returns</h2>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  <section class="product--shipping_etc">
+    <div class="icon">
+      <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-shipping.png?7955300992394463818">
+      <h3>Free Shipping Worldwide</h3>
+    </div>
+    <div class="icon">
+      <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-returns.png?7955300992394463818">
+      <h3>Simple Returns</h3>
+    </div>
+    <div class="icon">
+      <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-warranty.png?7955300992394463818">
+      <h3>2 Year Warranty</h3>
+    </div>
+    <div class="icon">
+      <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-card.png?7955300992394463818">
+      <h3>Safe Payments</h3>
+    </div>
+  </section>
+  <section class="product--photos">
+    <img src="//cdn.shopify.com/s/files/1/1653/9561/products/LALA_klein.jpg?v=1490120416" alt="Marina Rose Gold Mesh" class="gallery">
+    <img class="gallery" src="//cdn.shopify.com/s/files/1/1653/9561/products/LALA_1_.jpg_klein_e876d790-5d5b-4ee0-9691-bbe7256b2b08.jpg?v=1490120416"
+      alt="">
+      <img src="//cdn.shopify.com/s/files/1/1653/9561/products/LALA_1_.jpg_klein_e0988438-565b-4a76-bae5-0ee2c98749ce.jpg?v=1490120416"
+        alt="Marina Rose Gold Mesh" class="gallery">
+        <img src="//cdn.shopify.com/s/files/1/1653/9561/products/LALA_klein.jpg?v=1490120416" alt="Marina Rose Gold Mesh" class="gallery">
+  </section>
+  <div class="product-reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviewBtn">
+      <h3>Write a review</h3>
+    </div>
+  </div>
+  <div class="product--straps">
+    <div class="text-carasoul">
+      <h1>Want Another</h1>
+      <h1>Strap, Babe ?</h1>
+      <p>All Paul Valentine watches are designed to suit every strap so that you can easily change your watch to suit any occasion.
+        Mix and match watches and straps to find your perfect style.</p>
+      <div class="caro_btn_parent">
+        <div class="caro_btn_child"></div>
+        <div class="caro_btn_child"></div>
+      </div>
+    </div>
+    <div class="strap_img">
+      <img src="https://cdn.shopify.com/s/files/1/1653/9561/products/GREY_LEATHER_STRAP_SILVER_4b4ed255-92be-4850-bdba-78cd12665974_grande.png?v=1490120355" alt="">
+      </div>
   </div>
 </div>
-
-
-
-<div class="product--straps"></div>
