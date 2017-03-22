@@ -13,10 +13,10 @@ angular.module('app')
         // console.log(resp.data)
         $scope.products = resp.data;
     });
-    mainSvc.getTotal().then(function(resp){
-        console.log('the total is' + resp.data.sum)
-        $scope.total = resp.data[0].sum;
-    })
+    // mainSvc.getTotal().then(function(resp){
+    //     console.log('the total is' + resp.data.sum)
+    //     $scope.total = resp.data[0].sum;
+    // })
 
    
     // service.readProduct().then(function(resp){

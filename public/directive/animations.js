@@ -96,25 +96,25 @@ angular.module('app')
                     //         });
                         
                     // });
-                    $(window).ready(function(event){
-                         $(".cart").hide();
-                        $(".cart-overlay").hide();
+                    // $(window).ready(function(event){
+                    //      $(".cart").hide();
+                    //     $(".cart-overlay").hide();
 
-                    });
-                    $('.product--add_cart').click(function (event) {
-                        console.log('added jquery works')
-                        $(".cart").show();
-                        $(".cart-overlay").show();
+                    // });
+                    // $('.product--add_cart').click(function (event) {
+                    //     console.log('added jquery works')
+                    //     $(".cart").show();
+                    //     $(".cart-overlay").show();
 
-                    });
+                    // });
 
-                     $('.cart-overlay,  .header--cart').click(function (event) {
-                         $(".cart").hide();
-                        $(".cart-overlay").hide();
+                    //  $('.cart-overlay,  .header--cart').click(function (event) {
+                    //      $(".cart").hide();
+                    //     $(".cart-overlay").hide();
 
 
 
-                     });
+                    //  });
                      $('.ham').click(function (event) {
                          console.log('ham clicked')
                          $(".header-expand").css({

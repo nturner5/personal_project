@@ -11,6 +11,9 @@ angular.module('app')
     //  console.log(id);
      return $http.get('/product/' + id)
  }
+
+ this.showme=false;
+ 
  this.addToCart = function(productid){
      return $http.post('/add-to-cart/' + productid, {
          productid: productid

@@ -1053,6 +1053,8 @@ letter-spacing: .3px;
 .cart-overlay{
     width: 70vw;
     height: 100vh;
+    left: 0;
+    top: 0;
     position: fixed;
     
     /*margin-left: -70vw;*/

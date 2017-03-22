@@ -1,6 +1,13 @@
 angular.module('app')
 .controller('cartCtrl', function($scope, mainSvc,  $stateParams, $state){
 
+$scope.showme=function(){
+    console.log(mainSvc.showme) 
+    return mainSvc.showme};
+$scope.showmeFalse = function(){
+    mainSvc.showme = false;
+}
+
 mainSvc.getCart().then(function(res) {
             console.log('he')
             $scope.cart = res.data;

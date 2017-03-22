@@ -1,6 +1,6 @@
-<section ng-controller="cartCtrl">
+<section ng-controller="cartCtrl" ng-show="showme()">
    
- <!--<div class="cart-overlay"></div>-->
+ <div class="cart-overlay" ng-click="showmeFalse()"></div>
     <div class="cart">
         <h1 class="cartTitle">Your Bag</h1>
         <div ng-repeat="product in cart" class="cartProduct">
