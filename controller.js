@@ -29,7 +29,7 @@ module.exports = {
     },
     getCart: function(req, res, next){
         db.get_cart( function (err, prod){
-            console.log('clicked')
+            console.log('get cart fired')
             return res.send(prod)
         })
     },
@@ -38,4 +38,9 @@ module.exports = {
             return res.send(total)
         })
     }
+    // getQuantity: function(req, res, next){
+    //     db.get_quantity(function(err, total){
+    //         return res.send(total)
+    //     })
+    // },
 }

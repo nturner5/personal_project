@@ -18,4 +18,8 @@ mainSvc.getCart().then(function(res) {
         console.log('the total is' + resp.data.sum)
         $scope.total = resp.data[0].sum;
     })
+// mainSvc.getQuantity().then(function(resp){
+//     console.log('updating quantity')
+//     $scope.quantity = resp.data;
+// })
 })

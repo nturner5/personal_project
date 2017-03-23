@@ -3,6 +3,7 @@
  <div class="cart-overlay" ng-click="showmeFalse()"></div>
     <div class="cart">
         <h1 class="cartTitle">Your Bag</h1>
+        <div class="cartScroll">
         <div ng-repeat="product in cart" class="cartProduct">
             <div class="cart--bg_img">
                 <div class="cartDetails">
@@ -10,6 +11,8 @@
                 </div>
                 <img ng-src="{{product.imageurl}}" alt="" class="cart--img">
             </div>
+            <!--<div><h3>quantity: {{quantity}}</h3></div>-->
+        </div>
         </div>
         <div class="cart--btn_out">
             <div class="cartTotal">

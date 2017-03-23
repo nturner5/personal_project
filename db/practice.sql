@@ -30,12 +30,18 @@ CREATE TABLE products(
 
 );
 
+SELECT MIN(productid) AS id, products.name, products.collection, products.price, products.imageurl 
+FROM cart
+Join products on productid = products.id
+GROUP BY products.name, products.collection, products.price, products.imageurl;
 
+drop table cart
 
 CREATE TABLE cart (
     id SERIAL PRIMARY KEY,
     orderid INTEGER,
-    productid int
+    productid int,
+    qty INT NOT NULL DEFAULT 1
 );
 
 CREATE TABLE orders (

@@ -25,5 +25,8 @@ this.getCart = function(){
 this.getTotal = function(){
     return $http.get('total')
 }
+// this.getQuantity = function(){
+//     return $http.get('quantity')
+// }
     // this.getProduct = function
 })

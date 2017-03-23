@@ -186,6 +186,7 @@ h6,
 
 .footer-clear {
     height: 64vh;
+   
 }
 
 .footer h2 {
@@ -1076,6 +1077,7 @@ letter-spacing: .3px;
     top: 0;
     z-index: 100;
     text-align: center;
+    /*overflow: scroll;*/
     /*margin-right: -100vw;*/
     /*display: none;*/
 }
@@ -1105,6 +1107,13 @@ letter-spacing: .3px;
 
 .cartProduct {
     border-top: 1px solid grey;
+     /*overflow-y: scroll;*/
+    
+}
+.cartScroll{
+    height: 80vh;
+    overflow: scroll;
+    padding-bottom: 20vh;
 }
 
 .cart--img {
@@ -1125,7 +1134,7 @@ letter-spacing: .3px;
 .cart--btn_out {
     height: 20vh;
     position: absolute;
-    right: 0;
+    /*right: 0;*/
     width: 100%;
     bottom: 0;
     z-index: 120;
