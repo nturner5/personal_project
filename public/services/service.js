@@ -1,6 +1,8 @@
 angular.module('app')
 .service('mainSvc', function($http){
     this.test1 = 'service works'
+    this.cart = [];
+    var cart = this.cart;
     this.readProducts = function(){
         return $http.get('/products').then(function(resp){
             // console.log("Service: " + resp);
@@ -20,7 +22,11 @@ angular.module('app')
      })
  }
 this.getCart = function(){
-    return $http.get('/cart')
+     $http.get('/cart').then(function(resp){
+         console.log(resp.data);
+        Object.assign(cart, resp.data)
+    })
+    return cart;
 }
 this.getTotal = function(){
     return $http.get('total')

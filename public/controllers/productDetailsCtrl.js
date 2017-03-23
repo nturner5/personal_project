@@ -11,24 +11,22 @@ angular.module('app')
         $scope.addCart = function (product) {
             // console.log(product.id)
             mainSvc.addToCart(product.id).then(function () {
-                // console.log($scope.showmeFn)
-                mainSvc.getCart().then(function (response) {
-                    // console.log(response)
-                    $scope.cart = response.data;
-
-                })
+               $scope.updateCart();
             })
         }
 
-        mainSvc.getCart().then(function(res) {
-            console.log('he')
-            $scope.cart = res.data;
-            
-        })
+         $scope.cart = mainSvc.getCart();
+
           $scope.home = function(){
         console.log('it twerks')
         $state.go('home')
         
     };
+    $scope.updateCart = function(){
+        $scope.cart = mainSvc.getCart();
+        console.log($scope.cart.length);
+       
+    }
+    
 
     });

@@ -3,7 +3,8 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
 
-var connectionString = "postgres://postgres:@localhost/paul_valentine"
+// var connectionString = "postgres://postgres:@localhost/paul_valentine"
+var connectionString = "postgres://orpytcwd:0tvPMN_a3UTuhiYBqE37nllee9Fo5zn2@stampy.db.elephantsql.com:5432/orpytcwd"
 
 var db = massive.connectSync({connectionString : connectionString})
 
@@ -11,13 +12,18 @@ var db = massive.connectSync({connectionString : connectionString})
 var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static('./public'));
 
 app.set('db', db);
+
+db.set_schema(function(err, data) {
+    if (err) console.log(err);
+    else console.log('All tables successfully reset');
+})
 
 var controller = require('./controller.js');
 
 
-app.use(express.static('./public'));
 
 
 app.get('/products', controller.readAll)

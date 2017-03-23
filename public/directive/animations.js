@@ -28,6 +28,14 @@ angular.module('app')
                     // })
                     // var iScrollPos = 0;
 
+//    $(window).delay(function(){
+//                         console.log('scroll works')
+//                         $('html, body').animate({
+//                             scrollTop: $(".homebg_1").offset().top + $(".homebg_1")[0].scrollHeight
+//                         }, 1000);
+//                         return false;
+//                     },5000)
+//                     var iScrollPos = 0;
 
 
                     // $('.homebg_').scroll(function () {
@@ -48,6 +56,32 @@ angular.module('app')
                         // console.log(height)
                         if (height > 700) {
                             // do something
+                            $(".site-header").css({
+                                margin: 0
+                            });
+                            $(".experiment").css({
+                                paddingLeft: 100
+                            });
+
+
+
+
+                            // console.log('menu slides out now')
+                        } else {
+                            $(".site-header").css({
+                                margin: -100
+                            });
+                            $(".experiment").css({
+                                paddingLeft: 0
+                            })
+                        }
+                    });
+                     $('.product--right_scroll').scroll(function () {
+                        var height = $(window).scrollTop();
+                        // console.log(height)
+                        if (height > 10) {
+                            // do something
+                            console.log('position is'+ height)
                             $(".site-header").css({
                                 margin: 0
                             });

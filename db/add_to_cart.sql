@@ -12,3 +12,4 @@ INSERT INTO cart (orderid, productid) VALUES (1,$1);
 --   ON DUPLICATE KEY UPDATE qty = qty+1;
 
 -- UPDATE cart SET c=c+1 WHERE a=1;
+
