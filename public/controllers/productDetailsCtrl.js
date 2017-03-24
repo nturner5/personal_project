@@ -25,6 +25,7 @@ angular.module('app')
     $scope.updateCart = function(){
         $scope.cart = mainSvc.getCart();
         console.log($scope.cart.length);
+
        
     }
     

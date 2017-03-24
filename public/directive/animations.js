@@ -205,11 +205,17 @@ angular.module('app')
                         
                          );
                     })
-                    // $('.prodHover').mouseover(function(){
-                    //     console.log('prod hovered')
-                    //     // $('.prod_image').css('margin-top', '7vh')
-                    //     $( ".prod_image" ).off( "mouseenter mouseleave" );
-                    // })
+                    $('.home--products').mouseover(function(){
+                        console.log('prod hovered')
+                        $('.prod_image').css('margin-top', '6vh')
+                        $( ".prod_image" ).off( "mouseenter mouseleave" );
+                    })
+                    $('.home--products').mouseleave(function(){
+                        console.log('hover off')
+                        $('.prod_image').css('margin-top', '10vh')
+                        
+                        $( ".prod_image" ).off( "mouseenter mouseleave" );
+                    })
 
 
                 })

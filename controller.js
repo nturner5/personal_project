@@ -35,6 +35,7 @@ module.exports = {
                 console.log('func finished')
                 return res.send('added to cart')
             })
+            
         })
     },
 
