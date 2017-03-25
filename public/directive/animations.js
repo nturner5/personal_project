@@ -102,6 +102,7 @@ angular.module('app')
                             })
                         }
                     });
+                    
 
                     //#################PRODUCT HOVER#################################
                     // $('.gallery').hover(function(){

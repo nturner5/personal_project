@@ -13,7 +13,11 @@ angular.module('app')
         $scope.cart = mainSvc.getCart();
 
 
-
+ $scope.checkout = function(){
+        // console.log('it twerks')
+        $state.go('checkout')
+        
+    };
 
 
 

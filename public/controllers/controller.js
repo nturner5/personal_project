@@ -22,5 +22,14 @@ angular.module('app')
     // service.readProduct().then(function(resp){
     //     $scope.product = resp.data;
     // })
+    $(document).ready(function(){
+    // $('#header').css('opacity', 0);
+  
+    $('#animateTest').waypoint(function() {
+        $('#animateTest').addClass('animated fadeInRightBig');
+       }, {
+           offset: '100%'
+       });
+    })
      
 })

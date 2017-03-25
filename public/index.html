@@ -10,7 +10,10 @@
     
     <link href="styles/home.css" rel="stylesheet">
     <link href="styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <script src="https://use.fontawesome.com/eaf074fdfb.js"></script>
+    <link rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button.css"></link>
 </head>
  <animations-directive animate='animate'></animations-directive>
 <body>
@@ -53,24 +56,29 @@
     <!--</section>-->
     <footer-directive></footer-directive>
     <!--{{products}}-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>-->
+    <script src="https://js.stripe.com/v2/"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script>
-        <script src="./app.js"></script>
-        <script src="./services/service.js"></script>
-        <script src="./controllers/controller.js"></script>
-        <script src="./controllers/productDetailsCtrl.js"></script>
-        <script src="./controllers/navCtrl.js"></script>
-        <script src="./controllers/cartCtrl.js"></script>
-        
-        <script src="./directive/animations.js"></script>
-        <script src="./directive/cart-directive.js"></script>
-        <script src="./directive/nav-directive.js"></script>
-        <script src="./directive/footer-directive.js"></script>
-
-        <!--<script src="./controllers/cartCtrl.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="./app.js"></script>
+    <script src="./services/service.js"></script>
+    <script src="./controllers/controller.js"></script>
+    <script src="./controllers/productDetailsCtrl.js"></script>
+    <script src="./controllers/navCtrl.js"></script>
+    <script src="./controllers/cartCtrl.js"></script>
+    <script src="./controllers/checkoutCtrl.js"></script>
+    <script src="./directive/animations.js"></script>
+    <script src="./directive/cart-directive.js"></script>
+    <script src="./directive/nav-directive.js"></script>
+    <script src="./directive/footer-directive.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-stripe/4.2.12/angular-stripe.js"></script>
+    <!--<script src="./controllers/cartCtrl.js"></script>-->
 </body>
 
 </html>

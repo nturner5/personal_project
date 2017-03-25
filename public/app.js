@@ -1,5 +1,9 @@
-angular.module('app', ['ui.router'])
-.config(function($urlRouterProvider, $stateProvider) {
+angular.module('app', ['ui.router', 'angular-stripe'])
+.config(function($urlRouterProvider, $stateProvider, stripeProvider) {
+
+
+  stripeProvider.setPublishableKey('pk_test_OAGqNNdxYIiPPvz2vK7Z5VYA');
+
   $urlRouterProvider.otherwise('/')
 
   $stateProvider
@@ -22,6 +26,14 @@ angular.module('app', ['ui.router'])
       controller: 'controller',
       templateUrl: './views/login.html'
     })
-     
+    .state('checkout', {
+      url: '/checkout',
+      controller: 'checkoutCtrl',
+      templateUrl: './views/checkout.html'
+    })
+    .state('congrats', {
+      url: '/congrats',
+      templateUrl: './views/congrats.html'
+    })     
 })
 
