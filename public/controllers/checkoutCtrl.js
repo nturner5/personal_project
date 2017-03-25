@@ -10,6 +10,7 @@ $scope.thing = $scope;
 $scope.test = function(){
   console.log('tis working')
 }
+
   
 $scope.charge = function (payment) {
      console.log(payment)

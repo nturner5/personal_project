@@ -8,7 +8,9 @@ angular.module('app')
         $scope.showmeFalse = function () {
             mainSvc.showme = false;
         }
-
+$scope.hidemeFn=function(){
+           mainSvc.showme = false;
+       };
 
         $scope.cart = mainSvc.getCart();
 
