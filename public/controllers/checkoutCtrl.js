@@ -25,7 +25,7 @@ $scope.charge = function (payment) {
         method: 'POST',
         url: '/api/payment',
         data: {
-          amount: $scope.total * 10,
+          amount: $scope.total,
           payment: payment
         }
       })
