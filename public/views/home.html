@@ -1,3 +1,7 @@
+ <div id="loader" class="pageload-overlay animated slideOutUp" data-opening="M 0,0 80,-10 80,60 0,70 0,0" data-closing="M 0,-10 80,-20 80,-10 0,0 0,-10">
+        <div class="loader-bg"></div>
+        <div class="img"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/loader.png?7955300992394463818"></div>
+</div>
 <div id="box">
     <!--{{products}}-->
 
@@ -11,20 +15,20 @@
 </div>
 <div class="experiment">
     <div class="main-content">
-        <div class="popup" style="background-color: #fde9e5;">
+        <div class="popup" style="background-color: #fde9e5;" id="freeShip">
             <p style="color: #333333;">FREE SHIPPING WORLDWIDE</p>
         </div>
         <section class="home--products">
 
-            <!--############# Waypoint animations example#############-->
+            <!--############# Waypoint animations example#############¸-->
             <!--<div class="wrapper" id="animateTest">-->
             <div class="wrapper" id="animateTest">
                 
                 <h2>Our Most<br>Popular Watches</h2>
             </div>
             <section class="home-prod">
-              <div id="prodHover" ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
-                
+              <div id="{{productA.id}}" ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
+                {{productA.id}}
                        <div> 
                        <img class="prod_image" ng-src="{{productA.imageurl}}" alt="">
                         <!--<br> {{productA.name}}{{productA.price}}ß-->

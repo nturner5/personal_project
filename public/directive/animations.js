@@ -24,18 +24,36 @@ angular.module('app')
                     //     $('html, body').animate({
                     //         scrollTop: $(".homebg_1").offset().top + $(".homebg_1")[0].scrollHeight
                     //     }, 1000);
-                    //     return false;
+                    //     // return false;
                     // })
                     // var iScrollPos = 0;
 
-//    $(window).delay(function(){
-//                         console.log('scroll works')
-//                         $('html, body').animate({
-//                             scrollTop: $(".homebg_1").offset().top + $(".homebg_1")[0].scrollHeight
-//                         }, 1000);
-//                         return false;
-//                     },5000)
-//                     var iScrollPos = 0;
+                    setTimeout(function () {
+                    //     $('.homebg_1').animate({scrollTop: ($('#freeShip').offset().top)},2000)
+                    // }
+                    $('html, body').animate({
+                            scrollTop: $(".homebg_1").offset().top + $(".homebg_1")[0].scrollHeight
+                            }, 1000)}
+                    , 6000)
+
+                   
+
+                     
+
+//                     setTimeout(function(){
+//     $(window).animate({ scrollTop: window.pageYOffset + $(window).height()}, 2000);
+//     return false;
+//  },3000);
+
+
+                    //    $(window).delay(function(){
+                    //                         console.log('scroll works')
+                    //                         $('html, body').animate({
+                    //                             scrollTop: $(".homebg_1").offset().top + $(".homebg_1")[0].scrollHeight
+                    //                         }, 1000);
+                    //                         return false;
+                    //                     },5000)
+                    //                     var iScrollPos = 0;
 
 
                     // $('.homebg_').scroll(function () {
@@ -53,8 +71,8 @@ angular.module('app')
                     // });
                     $(window).scroll(function () {
                         var height = $(window).scrollTop();
-                        // console.log(height)
-                        if (height > 700) {
+                        console.log(height)
+                        if (height > 600) {
                             // do something
                             $(".site-header").css({
                                 margin: 0
@@ -76,12 +94,12 @@ angular.module('app')
                             })
                         }
                     });
-                     $('.product--right_scroll').scroll(function () {
+                    $('.product--right_scroll').scroll(function () {
                         var height = $(window).scrollTop();
                         // console.log(height)
                         if (height > 10) {
                             // do something
-                            console.log('position is'+ height)
+                            console.log('position is' + height)
                             $(".site-header").css({
                                 margin: 0
                             });
@@ -102,7 +120,7 @@ angular.module('app')
                             })
                         }
                     });
-                    
+
 
                     //#################PRODUCT HOVER#################################
                     // $('.gallery').hover(function(){
@@ -134,7 +152,7 @@ angular.module('app')
                     //         $(".experiment").css({
                     //             paddingLeft: 100
                     //         });
-                        
+
                     // });
                     // $(window).ready(function(event){
                     //      $(".cart").hide();
@@ -158,64 +176,64 @@ angular.module('app')
                     $('.ham').click(function (event) {
                         console.log('2nd ham clicked')
                     });
-                     $('.ham').click(function (event) {
-                         console.log('ham clicked')
-                         $(".header-expand").css({
-                             marginLeft: 100
-                         });
-                          $(".header-overlay").css({
-                             marginRight: 0
-                         });
+                    $('.ham').click(function (event) {
+                        console.log('ham clicked')
+                        $(".header-expand").css({
+                            marginLeft: 100
+                        });
+                        $(".header-overlay").css({
+                            marginRight: 0
+                        });
 
-                         $('header').css({
-                             background: '#000000'
-                         });
-                          $('.header--ham').css(
-                             'background-color', 'white'
-                         );
-                          $(".site-header__logo").css(
-                         'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo-white.png?285845556141198520")'
+                        $('header').css({
+                            background: '#000000'
+                        });
+                        $('.header--ham').css(
+                            'background-color', 'white'
+                        );
+                        $(".site-header__logo").css(
+                            'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo-white.png?285845556141198520")'
 
                         );
-                          $(".header--cart").css(
+                        $(".header--cart").css(
                             'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/cart-white.png?285845556141198520")'
-                        
-                         );
-                        
-                     })
-                    $('.header-overlay' ).click(function(event){
-                        $(".header-expand").css({
-                             marginLeft: -600
-                         });
-                          $(".header-overlay").css(
-                             "margin-right", "-70vw"
-                         );
 
-                         $('header').css({
-                             background: '#fff'
-                         });
-                          $(".site-header__logo").css(
-                         'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo.png?285845556141198520")'
+                        );
+
+                    })
+                    $('.header-overlay').click(function (event) {
+                        $(".header-expand").css({
+                            marginLeft: -600
+                        });
+                        $(".header-overlay").css(
+                            "margin-right", "-70vw"
+                        );
+
+                        $('header').css({
+                            background: '#fff'
+                        });
+                        $(".site-header__logo").css(
+                            'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/logo.png?285845556141198520")'
 
                         );
                         $('.header--ham').css(
-                             'background-color', 'black'
-                         );
-                          $(".header--cart").css(
+                            'background-color', 'black'
+                        );
+                        $(".header--cart").css(
                             'background-image', 'url("//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/cart.png?285845556141198520")'
-                        
-                         );
+
+                        );
                     })
-                    $('.home--products').mouseover(function(){
+                    $('#1').mouseover(function () {
                         console.log('prod hovered')
                         $('.prod_image').css('margin-top', '6vh')
-                        $( ".prod_image" ).off( "mouseenter mouseleave" );
+                        $(".prod_image").off("mouseenter mouseleave");
                     })
-                    $('.home--products').mouseleave(function(){
+                    $('#1').mouseleave(function () {
                         console.log('hover off')
                         $('.prod_image').css('margin-top', '10vh')
-                        
-                        $( ".prod_image" ).off( "mouseenter mouseleave" );
+
+                        $(".prod_image").off("mouseenter mouseleave");
                     })
 
 

@@ -31,5 +31,14 @@ angular.module('app')
            offset: '100%'
        });
     })
+    
+    // $('#loader').animateCss('slideOutUp')
+
+//     window.scroll({
+//   top: 2500, 
+//   left: 0, 
+//   behavior: 'smooth' 
+// });
+
      
 })
