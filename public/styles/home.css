@@ -756,9 +756,12 @@ h2 {
     color: black;
 }
 
-.home--about h3 {
+.home--about p{
     font-size: 16px;
-    letter-spacing: .7px;
+    letter-spacing: .4px;
+    color: #9B9B90;
+    line-height: 30px;
+    width: 61vw;
 }
 
 .home--about_btn:hover {
@@ -872,6 +875,7 @@ h2 {
     /*align-content: center;*/
     align-items: center;
     background-color: white;
+    margin-left: 100px;
 }
 
 .email_png {
@@ -1027,6 +1031,7 @@ h2 {
 .product--img_parent:hover .product--img,
 .product--img_parent:focus .product--img {
     transform: scale(1.15);
+    
 }
 
 /*.space {

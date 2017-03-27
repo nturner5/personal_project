@@ -18,7 +18,7 @@ angular.module('app')
     //     $scope.total = resp.data[0].sum;
     // })
 
-   
+    
     // service.readProduct().then(function(resp){
     //     $scope.product = resp.data;
     // })

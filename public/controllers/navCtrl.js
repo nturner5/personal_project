@@ -6,4 +6,9 @@ angular.module('app')
         $state.go('home')
         
     };
+
+    $scope.showmeFn=function(){
+        console.log('cart clicked')
+           mainSvc.showme = true
+       };
 })

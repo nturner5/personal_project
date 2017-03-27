@@ -224,12 +224,12 @@ angular.module('app')
 
                         );
                     })
-                    $('#1').mouseover(function () {
+                    $('.prod_image').mouseover(function () {
                         console.log('prod hovered')
                         $('.prod_image').css('margin-top', '6vh')
                         $(".prod_image").off("mouseenter mouseleave");
                     })
-                    $('#1').mouseleave(function () {
+                    $('.prod_image').mouseleave(function () {
                         console.log('hover off')
                         $('.prod_image').css('margin-top', '10vh')
 
