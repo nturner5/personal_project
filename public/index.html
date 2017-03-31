@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles/reset.css" rel="stylesheet">        
-        <link href="styles/home.css" rel="stylesheet">
-        </head>
-    <body ng-controller="controller">
-       <header class="site-header">
-          <div class="ham">
-               <div class="header--ham"></div>
-               <div class="header--ham"></div>
-               <div class="header--ham"></div>
-               
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/actual.scss" rel="stylesheet">
+    
+    <link href="styles/home.css" rel="stylesheet">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <script src="https://use.fontawesome.com/eaf074fdfb.js"></script>
+    
+    <link rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button.css"></link>
+</head>
+ <animations-directive animate='animate'></animations-directive>
+<body>
+     
+    
+    <nav-directive></nav-directive>
+    <ui-view autoscroll='true'></ui-view>
+    <cart-directive></cart-directive>
+    <section class="home--email">
+        <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-newsletter.png?7955300992394463818" class="email_png">
+        <h3>want some inbox love?</h3>
+        <div class="email_wrap">
+            <input type="email" name="Email Address" value="Email Address" class="input_box">
+            <div class="home--submit_btn">
+                <h2>Submit</h2>
             </div>
-           <div class="site-header__logo "></div>
-           <h2 class="site-server_h2">Paul Valentine</h2>
-           <div class="header--cart"></div>
-           
-       </header>
-    <ui-view></ui-view>
-    <!--{{test}}
-    {{test1}}
-    {{2+2}}-->
-    <div class="footer">
-      <h2>FAQ</h2> 
-      <h2>Returns</h2>  
-      <h2>shipping</h2>  
-      <h2>contact</h2> 
-      <h2>Store finder</h2> 
-      <div class="index--social_media">
-<a href="https://www.facebook.com/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-facebook.png?7955300992394463818"></a>
-      <a href="https://www.instagram.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-instagram.png?7955300992394463818"></a>
-            <a href="https://www.snapchat.com/add/paulvalentinee" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-snapchat.png?7955300992394463818"></a>
-            <a href="https://de.pinterest.com/paulvalentinee/" target="_blank"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/social-pinterest.png?7955300992394463818"></a>
-      </div>
-      <h2>Site by bao agency</h2>
-      <h2>Copyright Paul Valentine 2017</h2>
-      <h2>Terms & Conditions | Privacy | Legal Notice</h2>
-      
-      
-
-       
-    </div>
-   
+        </div>
+    </section>
+    <div class="footer-clear"></div>
+    <!--<section ng-controller="productDetailsCtrl">
+    <div class="cart">
+        <h1 class="cartTitle">Your Bag</h1>
+        <div ng-repeat="product in cart" class="cartProduct">
+            <div class="cart--bg_img">
+                <div class="cartDetails">
+                    <h3>{{product.name}}</h3><h3> {{product.collection}}</h3><h3>${{product.price}}</h3>
+                </div>
+                <img ng-src="{{product.imageurl}}" alt="" class="cart--img">
+            </div>
+        </div>
+        <div class="cart--btn_out" ng-controller="controller">
+            <div class="cartTotal">
+                <div class="totalLeft"><h2>TOTAL</h2></div> <div class="totalRight"><h2>${{total}}</h2></div>
+            </div>
+            <div class="cart--btn">
+                <h2>Pay Now Securely</h2>
+            </div>
+        </div>
+    </div>-->
+    <!--</section>-->
+    <footer-directive></footer-directive>
     <!--{{products}}-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-         <script src="./app.js"></script>
-         <script src="./services/service.js"></script>
-          
-        <script src="./controllers/controller.js"></script>
-        <script src="./controllers/productCtrl.js"></script>
-        <script src="./directive/animations.js"></script>
-        
-        
-       
-    </body>
-
-
-
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>-->
+    <script src="https://js.stripe.com/v2/"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="./app.js"></script>
+    <script src="./services/service.js"></script>
+    <script src="./controllers/controller.js"></script>
+    <script src="./controllers/productDetailsCtrl.js"></script>
+    <script src="./controllers/navCtrl.js"></script>
+    <script src="./controllers/cartCtrl.js"></script>
+    <script src="./controllers/checkoutCtrl.js"></script>
+    <script src="./directive/animations.js"></script>
+    <script src="./directive/cart-directive.js"></script>
+    <script src="./directive/nav-directive.js"></script>
+    <script src="./directive/footer-directive.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-stripe/4.2.12/angular-stripe.js"></script>
+    <!--<script src="./controllers/cartCtrl.js"></script>-->
+</body>
 
 </html>

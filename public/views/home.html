@@ -1,108 +1,157 @@
-<div>
-    <!--{{products}}-->
+ <div id="loader" class="pageload-overlay animated slideOutUp" data-opening="M 0,0 80,-10 80,60 0,70 0,0" data-closing="M 0,-10 80,-20 80,-10 0,0 0,-10">
+        <div class="loader-bg"></div>
+        <div class="img"><img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/loader.png?7955300992394463818"></div>
 </div>
-<div class="homebg_1">
+<div id="box">
     <!--{{products}}-->
-</div>
-<div class="main-content">
-    <div class="popup" style="background-color: #fde9e5;">
-        <p style="color: #333333;">FREE SHIPPING WORLDWIDE</p>
+
+    <div class="homebg_1">
+   
+   <!--###################ANIMATIONS.CSS example below#####################-->
+    <!--<div class="homebg_1 animated slideOutUp">-->
+        
+        <!--{{products}}-->
     </div>
-    <section class="home--products">
-        <div class="wrapper">
-            <h2>Our Most<br>Popular Watches</h2>
+</div>
+<div class="experiment">
+    <div class="main-content">
+        <div class="popup" style="background-color: #fde9e5;" id="freeShip">
+            <p style="color: #333333;">FREE SHIPPING WORLDWIDE</p>
         </div>
-        <section class="home-prod">
-            <div ng-repeat="product in products" class="productsize">
-                <a href="/product/:id"> <img class="prod_image" ng-src="{{product.imageurl}}" alt=""></a>
-                <br> {{product.name}} <br> {{product.price}}
+        <section class="home--products">
+
+            <!--############# Waypoint animations example#############¸-->
+            <!--<div class="wrapper" id="animateTest">-->
+            <div class="wrapper" id="animateTest">
+                
+                <h2>Our Most<br>Popular Watches</h2>
+            </div>
+            <section class="home-prod">
+              <div id="{{productA.id}}" ng-repeat="productA in products" class="productsize" ng-click="prodView(productA.id)">
+               
+                       <div> 
+                       <img class="prod_image" ng-src="{{productA.imageurl}}" alt="">
+                        <!--<br> {{productA.name}}{{productA.price}}ß-->
+                    </div>
+                
+                </div>
+            </section>
+            <div class="btn-center">
+                <div class="all-watches-button" type="all watches">ALL WATCHES</div>
             </div>
         </section>
-        <div class="btn-center">
-            <div class="all-watches-button" type="all watches">ALL WATCHES</div>
+    </div>
+    
+<section class="home--collections" ng-click="">
+             <!--FELIZ-->
+        <div class="collection_flex">
+            <div class="feliz-bg_parent">
+                <div class="feliz-bg">
+                    <h2 class="collections-name">Feliz</h2>
+                </div>
+            </div>
+            
+            <!--PEARL-->
+            <div class="pearl-bg_parent">
+                <div class="pearl-bg">
+                    <h2 class="collections-name">Pearl</h2>
+                </div>
+            </div>
+            
+        </div>
+        <!--Journey-->
+        <div class="home--journey_parent">
+            <div class="home--journey">
+                <!--<img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818" class="home--journey_img" alt="">-->
+                <div class="home--journey_content">
+                    <h1>Join Us On Our</h1>
+                    <h2 class="home--journey_caption">Journey</h2>
+                    <div class="home--journey_button">
+                        <h2>Journey</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection_flex">
+            <!--Marina-->
+            <div class="marina-bg_parent">
+                <div class="marina-bg">
+                    <h2 class="collections-name">Marina</h2>
+                </div>
+            </div>
+
+            <div class="straps-bg_parent">
+                <div class="straps-bg">
+                    <h2 class="collections-name">straps</h2>
+                </div>
+            </div>
+            
+        </div>
+    <!--</div>-->
+    </section>
+    <section class="home--about">
+        <h2>PREMIUM MATERIAL & AUTHENTIC CRAFTSMANSHIP</h2>
+        <p>At Paul Valentine we work with one of the leading watch suppliers in the industry to ensure quality is at the heart
+            of every watch. We use locally sourced Italian genuine leather and combine it with hand-finished metals to deliver
+            premium detailing and durability.</p>
+        <div class="home--about_btn">
+            <h2>About Us</h2>
         </div>
     </section>
-</div>
-<!--FELIZ-->
-<section class="home--collections" ng-click="">
-    <div class="feliz-bg"></div>
-    <!--<div>
-            <img src='//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_1_image.jpg?7955300992394463818' alt="" class="home--collections1">
-        </div>-->
-    <div class="collection_inner">
-        <h2>FELIZ</h2>
-        <div class="home--collection_button">
-            <h2>VIEW COLLECTION</h2>
-        </div>
-    </div>
-    <!--PEARL-->
-    <div class="pearl-bg">
-        <!--<img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_collection_2_image.jpg?7955300992394463818" class="home--collections1">-->
-    </div>
-    <div class="collection_inner">
-        <h2>Pearl</h2>
-        <div class="home--collection_button">
-            <h2>VIEW COLLECTION</h2>
-        </div>
-    </div>
-    <!--Journey-->
-    <div class="home--journey">
-        <!--<img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/home_blog_image.jpg?7955300992394463818" class="home--journey_img" alt="">-->
-        <div class="home--journey_content">
-            <h1>Join Us On Our</h1>
-            <h2 class="home--journey_caption">Journey</h2>
-            <div class="home--journey_button">
-                <h2>Journey</h2>
-            </div>
-        </div>
-    </div>
-        <!--Marina-->
-        <div class="marina-bg"></div>
-        <div class="collection_inner">
-            <h2>Marina</h2>
-            <div class="home--collection_button">
-                <h2>VIEW COLLECTION</h2>
-            </div>
-        </div>
-        <div class="straps-bg"></div>
-        <div class="collection_inner">
-            <h2>Straps</h2>
-            <div class="home--collection_button">
-                <h2>VIEW COLLECTION</h2>
-            </div>
-        </div>
-</section>
-<section class="home--about">
-    <h2>PREMIUM MATERIAL & AUTHENTIC CRAFTSMANSHIP</h2>
-    <h3>At Paul Valentine we work with one of the leading watch suppliers in the industry to ensure quality is at the heart of every watch. We use locally sourced Italian genuine leather and combine it with hand-finished metals to deliver premium detailing and durability.</h3>
-<div class="home--about_btn"> <h2>About Us</h2> </div>
-</section>
-<div class="home--instagram">
-    <div class="home--instagram_content">
-    <div class="home--insta_icon1">
-        <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/instagram--white.png?7955300992394463818">
-    </div>
-    <h2>Shop instagram</h2>
-    </div>
-</div>
 
-<section class="home--insta_photos">
-    <img src="././imagefiles/ig1.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig2.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig3.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig4.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig5.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig6.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig7.jpg" alt="" class="insta-img">
-    <img src="././imagefiles/ig8.jpg" alt="" class="insta-img">
+<section class="insta_flex">
+    <div class="home--insta_photos">
+         <img src="././imagefiles/ig1.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig2.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig3.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig4.jpg" alt="" class="insta-img">
+    </div>
+    <div class="home--instagram">
+        <div class="home--instagram_content">
+            <div class="home--insta_icon1">
+                <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/instagram--white.png?7955300992394463818">
+            </div>
+            <h2>Shop instagram</h2>
+        </div>
+    </div>
+    <div class="home--insta_photos">
+        <img src="././imagefiles/ig5.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig6.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig7.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig8.jpg" alt="" class="insta-img">
+    </div>
     
 </section>
 
-<section class="home--email">
-    <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/icon-newsletter.png?7955300992394463818" class="email_png"> 
-    <h3>want some inbox love?</h3>
-    <div class="email_wrap">
-        <input type="email" name="Email Address" value="Email Address" class="input_box">
-        <div class="home--submit_btn"><h2>Submit</h2></div>
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="home--instagram">
+        <div class="home--instagram_content">
+            <div class="home--insta_icon1">
+                <img src="//cdn.shopify.com/s/files/1/1653/9561/t/3/assets/instagram--white.png?7955300992394463818">
+            </div>
+            <h2>Shop instagram</h2>
+        </div>
     </div>
-</section>
+    <section class="home--insta_photos">
+        <img src="././imagefiles/ig1.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig2.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig3.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig4.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig5.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig6.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig7.jpg" alt="" class="insta-img">
+        <img src="././imagefiles/ig8.jpg" alt="" class="insta-img">
+    </section>-->
+    
+</div>
+
