@@ -5,6 +5,7 @@ module.exports = {
     //refer to w6/d3/massive-sql-products
 
     readAll: function (req, res) {
+        console.log('getting products')
         db.readProducts(function (err, prod) {
             if (err) return console.log(err, 'err on readProducts');
             else return res.send(prod)

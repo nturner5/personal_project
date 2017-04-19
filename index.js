@@ -77,6 +77,6 @@ app.post('/api/payment', function(req, res, next){
 });
 // app.get('/quantity', controller.getQuantity)
 
-app.listen('3050', function(){
+app.listen('3000', function(){
   console.log("Successfully listening on : 3050")	
 })

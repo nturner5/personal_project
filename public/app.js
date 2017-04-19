@@ -8,7 +8,7 @@ angular.module('app', ['ui.router', 'angular-stripe'])
 
   $stateProvider
     .state('home', {
-      url: '/products',
+      url: '/',
       controller: 'controller',
       templateUrl: './views/home.html'
     })
