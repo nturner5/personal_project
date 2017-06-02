@@ -1014,6 +1014,7 @@ h2 {
     /*width: 100%;*/
     height: 100%;
     transition: all .8s;
+    margin-top: 4vh;
 }
 
 .feliz-bg {
